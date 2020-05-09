@@ -73,32 +73,39 @@ header div.p{
 	text-align: center;
 }
 .left{
-	float: left;
+	margin: 40px 40px;
 }
 .right{
-	float: left;
 	margin-top: 10%;
 }
+.sec{
+	text-align: center;
+}
 .sec-img1{
-	width: 250px;
-	height: 333px;
-	margin-left: 40%;
-	margin-top: 25%;	
+	width: 240px;
+	height: 315px;
+}
+.selfimg{
+	transform:scale(1,1);
+	transition: all 0.4s ease-out;
+}
+.selfimg:hover{
+	transform:scale(0.9,0.9);
 }
 .sec-p1{
 	font-family: Microsoft JhengHei;
 	color: #8F857D;
-	font-size: 45px;
+	font-size: 40px;
 } 
 .sec-p2{
 	font-family: Microsoft JhengHei;
 	color: #5B4434;
-	font-size: 24px;
-	line-height: 50px;
+	font-size: 20px;
+	line-height: 45px;
 }
 .sec-img2{
 	width: 760px;
-	margin-top:5%;
+	margin-top:2%;
 }
 .sec-title{
 	font-family: Microsoft JhengHei;
@@ -245,7 +252,7 @@ div.boxsize p{
 	width: 360px;
 	height:200px;
 	transform:scale(1,1);
-	transition: all 0.4s ease-out;
+	transition: all 0.3s ease-out;
 }
 .lifeimg1:hover{
 	transform:scale(1.1,1.1);
@@ -257,7 +264,7 @@ div.boxsize p{
 	width: 250px;
 	height: 350px;
 	transform:scale(1,1);
-	transition: all 0.4s ease-out;
+	transition: all 0.3s ease-out;
 }
 .lifeimg2:hover{
 	transform:scale(1.1,1.1);
@@ -267,7 +274,7 @@ div.boxsize p{
 	height:270px;
 	margin-bottom: 10%;
 	transform:scale(1,1);
-	transition: all 0.4s ease-out;
+	transition: all 0.3s ease-out;
 }
 .lifeimg3:hover{
 	transform:scale(1.1,1.1);
