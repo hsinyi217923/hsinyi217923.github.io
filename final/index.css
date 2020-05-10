@@ -1,0 +1,62 @@
+nav{
+	background: #CECECE;
+}
+nav a{
+	font-family: Microsoft JhengHei;
+	color: #464646;
+	font-size: 18px;
+}
+nav a:hover{
+	color: #565656;
+	font-weight: bold;
+}
+.center{
+	text-align: center;
+}
+.right{
+	text-align: right;
+}
+nav .logo{
+	width: 70px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+nav .icon{
+	width: 30px;
+	margin:1% 2%;
+}
+header{
+	background-image: url("image/original2.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.headermask{
+	height: 100%;
+	width: 100%;
+	background: rgba(176,176,176,0.5);
+}
+header .title{
+	padding-top: 3%;
+	font-family: Microsoft JhengHei;
+	color: #FFFFFF;
+	font-size: 45px;
+	text-decoration: underline;
+	letter-spacing: 10px;
+}
+header .story{
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: Microsoft JhengHei;
+	line-height: 25px;
+}
+header .button{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+footer{
+	background: #565656;
+	color: #C9C9C9;
+	line-height: 25px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
