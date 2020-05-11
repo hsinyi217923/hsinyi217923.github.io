@@ -1,0 +1,37 @@
+.st{
+	font-family: Microsoft JhengHei;
+	color: #703209;
+	font-size: 45px;
+}
+.s{
+	border-top: 2px #703209 solid;
+	padding-bottom: 3%;
+}
+.card-body{
+	background: #FEFAEE;
+}
+.card-link{
+	color: #464646;
+}
+.card-link:hover{
+	color: #767676;
+}
+.card{
+	margin-top: 10%;
+	margin-bottom: 15%;
+}
+.card:hover{
+	background: rgba(176,176,176,0.8);
+}
+.breadcrumb{
+	color: #767676;
+	background: #F5F5F5;
+	font-size: 14px;
+}
+.bread{
+	font-size: 15px;
+	color: #464646;
+}
+.bread:hover{
+	color: #767676;
+}

@@ -25,9 +25,12 @@ nav .icon{
 	width: 30px;
 	margin:1% 2%;
 }
+section{
+	background: #FEFAEE;
+}
 header{
-	background-image: url("image/original2.jpg");
-	background-size: 100%;
+	background-image: url("../image/original2.jpg");
+	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
 .headermask{
