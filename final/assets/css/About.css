@@ -1,0 +1,85 @@
+.about{
+font-family: Microsoft JhengHei;
+color: #703209;
+font-size: 45px;
+text-align: center;
+border-bottom: 2px #703209 solid;
+padding-top: 3%;
+}
+
+.selflink{
+	border-top:#565656 2px solid;
+
+}
+.btn-outline-secondary{
+	font-family:  Microsoft JhengHei;
+	
+}
+.btn-outline-secondary:hover{
+	background: #464646;
+}
+.iconimg{
+	text-align: center;
+	width: 50px;
+	margin: 4% 2%;
+}
+.simg{
+	width: 100%;
+}
+.stext{
+	font-family:  Microsoft JhengHei;
+	color: #565656;
+	font-size: 30px;
+
+}
+.stext2{
+	line-height: 50px;
+	font-family:  Microsoft JhengHei;
+	color: #464646;
+	font-size: 18px;
+}
+.timebox{
+	background: white;
+	border:1px #703209 solid;
+	margin: 2% -1%;
+	padding: 2%;
+}
+.timeline-section{
+  position: relative;
+  padding: 3%;
+}
+.timeline-section:after{
+  content:"";
+  position: absolute;
+  top: 0;
+  bottom: 0; /* top 跟 bottom 設定軸線的方向 */
+  left: 50%;
+  /* 讓線定位在中央，但是軸線會從左邊 50% 起往右畫 3px，造成軸線偏右 */
+  width: 3px;
+  transform: translateX(-50%);
+  /* transform 是 CSS 的變形方式，其中包含位移，這邊用來修正軸線偏右 */
+  background-color: #703209; /* 寬度跟顏色把線畫出來 */
+}
+.timeline-pointer{
+  position: relative;
+}
+.timeline-pointer:after{
+  content:"";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 3px solid #703209;
+  transform: translateX(-50%);
+  background-color: #fff;
+  margin-top: 2%;
+  z-index: 1;
+}
+@media (max-width: 576px){
+  .timeline-section:after, .timeline-pointer:after{
+    display: none;
+  }
+}
