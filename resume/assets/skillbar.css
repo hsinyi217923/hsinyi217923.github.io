@@ -6,13 +6,13 @@ li{
 	color: #5B4434;
 	font-size: 18px;
 	font-family:  Microsoft JhengHei;
-	margin: 24px 0px;
+	margin: 26px 0px;
 	position: relative;
 }
 li::before,li::after{
 	content: "";
 	display: block;
-	height: 18px;
+	height: 16px;
 	width: 100%;
 	background: #F8F6F7;
 	position: absolute;
@@ -27,6 +27,9 @@ li::after{
 	animation-duration: 1.2s;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
+}
+.padding{
+	padding-bottom: 5%;
 }
 
 .Java::after{
