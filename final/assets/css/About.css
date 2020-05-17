@@ -36,7 +36,7 @@ padding-top: 3%;
 	line-height: 50px;
 	font-family:  Microsoft JhengHei;
 	color: #464646;
-	font-size: 18px;
+	font-size: 17px;
 }
 .timebox{
 	background: white;
@@ -46,7 +46,7 @@ padding-top: 3%;
 }
 .timeline-section{
   position: relative;
-  padding: 3%;
+  padding: 2%;
 }
 .timeline-section:after{
   content:"";
