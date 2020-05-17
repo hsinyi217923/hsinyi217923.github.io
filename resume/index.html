@@ -6,7 +6,9 @@
 		<title>個人履歷</title>
 		<style type="text/css">
 			@import url("assets/index.css");
+			@import url("assets/skillbar.css");
 		</style>
+		<script src="assets/circle.js"></script>
 	</head>
 	<body>
 		<header>
@@ -55,76 +57,38 @@
 						<div class="sec-title">專業技術</div>
 						<table class="center col-sm-12">
 							<tr>
-								<th><div class="bg">
-									<div class="circle-right"></div>
-									<div class="circle-left">
-										<div class="mask-left" style="transform: rotate(72deg);"></div>
-									</div>
-									<div class="text">70%</div>
+								<th><div>
+									<canvas id="canvas" width="150" height="150"></canvas>
 								</div>
 								<div class="cirskilltext">前端網頁</div>
 							</th>
-							<th><div class="bg">
-								<div class="circle-right"></div>
-								<div class="circle-left">
-									<div class="mask-left" style="transform: rotate(90deg);"></div>
-								</div>
-								<div class="text">75%</div>
+							<th><div >
+								<canvas id="canvas2" width="150" height="150"></canvas>
 							</div>
 							<div class="cirskilltext">後端網頁</div></th>
 						</tr>
 						<tr>
-							<td><div class="bg">
-								<div class="circle-right"></div>
-								<div class="circle-left">
-									<div class="mask-left" style="transform: rotate(36deg);"></div>
-								</div>
-								<div class="text">60%</div>
+							<td><div >
+								<canvas id="canvas3" width="150" height="150"></canvas>
 							</div>
 							<div class="cirskilltext">BI工具(Tableau)</div>
 						</td>
-						<td><div class="bg">
-							<div class="circle-right"></div>
-							<div class="circle-left">
-								<div class="mask-left" style="transform: rotate(108deg);"></div>
-							</div>
-							<div class="text">80%</div>
+						<td><div>
+							<canvas id="canvas4" width="150" height="150"></canvas>
 						</div>
 						<div class="cirskilltext">AI、PS</div>
 					</td>
 				</tr>
 			</table>
 			<div class="sec-title">程式技能</div>
-			<div class="skillbar">
-				<div class="skill">Java</div>
-				<div class="progress">
-					<div class="progress-bar " style="width: 80%;">80%</div>
-				</div>
-			</div>
-			<div class="skillbar">
-				<div class="skill">Python</div>
-				<div class="progress">
-					<div class="progress-bar" style="width: 60%;">60%</div>
-				</div>
-			</div>
-			<div class="skillbar">
-				<div class="skill">C#</div>
-				<div class="progress">
-					<div class="progress-bar" style="width: 75%;">75%</div>
-				</div>
-			</div>
-			<div class="skillbar">
-				<div class="skill">HTML/CSS/JS</div>
-				<div class="progress">
-					<div class="progress-bar" style="width: 70%;">70%</div>
-				</div>
-			</div>
-			<div class="skillbar">
-				<div class="skill">MySQL</div>
-				<div class="progress">
-					<div class="progress-bar" style="width: 65%;">65%</div>
-				</div>
-			</div></th>
+				<ul>
+					<li class="Java">Java</li>
+					<li class="Python">Python</li>
+					<li class="C">C#</li>
+					<li class="HTML">HTML5/CSS/JS</li>
+					<li class="SQL">SQL</li>
+				</ul>
+			</th>
 			<th class="col-sm-7">
 				<div class="sec-title exp">
 					經歷

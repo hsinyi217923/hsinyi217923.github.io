@@ -1,0 +1,87 @@
+ul{
+	width: 325px;
+}
+li{
+	list-style: none;
+	color: #5B4434;
+	font-size: 18px;
+	font-family:  Microsoft JhengHei;
+	margin: 24px 0px;
+	position: relative;
+}
+li::before,li::after{
+	content: "";
+	display: block;
+	height: 18px;
+	width: 100%;
+	background: #F8F6F7;
+	position: absolute;
+	bottom: -18px;
+	border-radius: 10px;
+}
+li::after{
+	background-image: linear-gradient(90deg,#A3A9A5,#54534E)
+}
+
+li::after{
+	animation-duration: 1.2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+}
+
+.Java::after{
+	animation-name: Java;
+}
+.Python::after{
+	animation-name: Python;
+}
+.C::after{
+	animation-name: C;
+}
+.HTML::after{
+	animation-name: HTML;
+}
+.SQL::after{
+	animation-name: SQL;
+}
+
+@keyframes Java{
+	from {
+		width: 0;
+	}
+	to{
+		width: 80%;
+	}
+}
+@keyframes Python{
+	from {
+		width: 0;
+	}
+	to{
+		width: 60%;
+	}
+}
+@keyframes C{
+	from {
+		width: 0;
+	}
+	to{
+		width: 75%;
+	}
+}
+@keyframes HTML{
+	from {
+		width: 0;
+	}
+	to{
+		width: 70%;
+	}
+}
+@keyframes SQL{
+	from {
+		width: 0;
+	}
+	to{
+		width: 65%;
+	}
+}
