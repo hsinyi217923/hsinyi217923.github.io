@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<title>ProductInner</title>
+		<style>
+			@import url("../assets/css/index.css");
+			@import url("../assets/css/ProductInner.css");
+			@import url("../assets/css/stars.css");
+		</style>
+	</head>
+	<body>
+		<div class="container-fuild">
+			<nav class="navbar justify-content-around ">
+				<ul class="nav col-sm-4">
+					<li class="nav-item"><a href="Home.html" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="../index.html" class="nav-link">Story</a></li>
+					<li class="nav-item"><a href="" class="nav-link">About us</a></li>
+				</ul>
+				<div class="col-sm-4 center">
+					<a href="Home.html"><img src="../assets/image/logo.png" class="logo" ></a>
+				</div>
+				<div class="col-sm-4 right">
+					<div class="btn-group dropleft">
+						<a href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="../assets/image/member.png" class="icon ">
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Member</a>
+							<a class="dropdown-item" href="#">Collections</a>
+							<a class="dropdown-item" href="#">Records</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Sign in/Register</a>
+						</div>
+					</div>
+					<a href="shoppingcart.html"><img src="../assets/image/cart.png" class="icon"></a>
+				</div>
+			</nav>
+			<section>
+				<nav aria-label="breadcrumb">
+					<ol class="breadcrumb">
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<li class="breadcrumb-item"><a href="Home.html" class="bread">Home</a></li>
+						<li class="breadcrumb-item"><a href="Products.html" class="bread">Products</a></li>
+						<li class="breadcrumb-item" aria-current="page">產品名稱</li>
+					</ol>
+				</nav>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-sm-5">
+							<img src="../assets/image/products/p1.png" alt="" class="primg">
+						</div>
+						<div class="col-sm-5 prarea">
+							<div class="proname">產品名稱</div>
+							<div class="proprice">
+								NT$950
+							</div>
+							<div class="d-block mb-3" >
+								<div class="mb-0 d-inline-block pronum">
+									數量
+								</div>
+								<form action="" class="d-inline-block">
+									<input type="number" value="1" class="form-control w-50" id="quantuty">
+								</form>
+								<a href="" class="btn1">
+									<div class="probtn1">
+										加入購物車
+									</div>
+								</a>
+								<a href="" class="btn2">
+									<div class="probtn2">
+										加入我的收藏
+									</div>
+								</a>
+								<div class="stock">
+									庫存剩下0件
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="st">
+						• Product Information
+					</div>
+				</div>
+				<div class="col-sm-7">
+					<div class="s"></div>
+				</div>
+				<div class="container">
+					<div class="proinf">
+						產品資訊產品資訊產品資訊 <br>
+						產品資訊產品資訊 <br>
+						產品資訊產品資訊產品資訊 <br>
+					</div>
+				</div>
+				<div class="container-fuild bottom">
+					<div class="grayblock">
+						<div class="row justify-content-around ">
+							<div class="col-sm-7 message">
+								<div class="row mesline">
+									<div class='col-sm-2'>
+										<img src='../assets/image/member.png' style='width:50px;'>
+									</div>
+									<div class='col-sm-7'>
+										<p><b>商品名稱</b></p>
+										<p>會員名稱：</p>
+										<p>評分：</p>
+										<p>評論：</p>
+									</div>
+								</div>
+								<div class="row mesline">
+									<div class='col-sm-2'>
+										<img src='../assets/image/member.png' style='width:50px;'>
+									</div>
+									<div class='col-sm-7'>
+										<p><b>商品名稱</b></p>
+										<p>會員名稱：</p>
+										<p>評分：</p>
+										<p>評論：</p>
+									</div>
+								</div>
+								
+							</div>
+							<div class="col-sm-4 messageform">
+								<form action="" method="get" accept-charset="utf-8">
+									<h5><b>填寫評論</b></h5>
+									<br>
+									<div class="form-row">
+										<div class="form-group col-md-6">
+											<label for="Name">姓名
+												<span class="text-danger">*</span>
+											</label>
+											<input type="text" class="form-control" id="Name" required placeholder="Name">
+										</div>
+										<div class="form-group col-md-12">
+											<label>評分
+												<span class="text-danger">*</span>
+											</label>
+											<div class="rating">
+												<input type="radio" id="star5" name="rating" value="5" hidden/>
+												<label for="star5"></label>
+												<input type="radio" id="star4" name="rating" value="4" hidden/>
+												<label for="star4"></label>
+												<input type="radio" id="star3" name="rating" value="3" hidden/>
+												<label for="star3"></label>
+												<input type="radio" id="star2" name="rating" value="2" hidden/>
+												<label for="star2"></label>
+												<input type="radio" id="star1" name="rating" value="1" hidden/>
+												<label for="star1"></label>
+											</div>
+										</div>
+										<div class="form-group col-md-12">
+											<label for="comment">評論
+												<span class="text-danger">*</span>
+											</label>
+											<textarea class="form-control" id="comment" rows="3"></textarea>
+										</div>
+									</div>
+									<div align="center">
+										<button type="submit" class="btn btn-secondary">送出</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="center">
+				Visitors： <br>
+				Contact：cycubox@cycu.edu.tw <br>
+				Tel：+886-3-265-9999 <br>
+				Copyright © 2020 All Rights Reserved. Design By I24
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	</body>
+</html>

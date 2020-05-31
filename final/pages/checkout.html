@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<title>Checkout</title>
+		<style>
+			@import url("../assets/css/index.css");
+			@import url("../assets/css/checkout.css");
+		</style>
+	</head>
+	<body>
+		<div class="container-fuild">
+			<nav class="navbar justify-content-around ">
+				<ul class="nav col-sm-4">
+					<li class="nav-item"><a href="Home.html" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="../index.html" class="nav-link">Story</a></li>
+					<li class="nav-item"><a href="About.html" class="nav-link">About us</a></li>
+				</ul>
+				<div class="col-sm-4 center">
+					<a href="Home.html"><img src="../assets/image/logo.png" class="logo" ></a>
+				</div>
+				<div class="col-sm-4 right">
+					<div class="btn-group dropleft">
+						<a href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="../assets/image/member.png" class="icon ">
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Member</a>
+							<a class="dropdown-item" href="#">Collections</a>
+							<a class="dropdown-item" href="#">Records</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Sign in/Register</a>
+						</div>
+					</div>
+					<a href="shoppingcart.html"><img src="../assets/image/cart.png" class="icon"></a>
+				</div>
+			</nav>
+			<!--結帳-->
+			<section class="page-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 mb-3">
+							<h2 class="checkout">Checkout</h2>
+							<div class="alert alert-secondary alert-dismissible fade show" role="alert">
+								您目前尚未登入，請點擊 <a href="" class="alert-link">連結</a>進行登入
+								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+						</div>
+						<!--購物資料-->
+						<div class="col-12 col-md-6">
+							<h2>填寫購物資料</h2><br>
+							<form action="">
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="LastName">姓氏
+										<span class="text-danger">*</span></label>
+										<input type="text" class="form-control" id="LastName" required placeholder="LastName">
+									</div>
+									<div class="form-group col-md-6">
+										<label for="FirstName">名字
+										<span class="text-danger">*</span></label>
+										<input type="text" class="form-control" id="FirstName" required placeholder="FirstName">
+									</div>									
+								</div>
+								<div class="form-row">
+									<div class="form-group col-md-6">
+										<label for="tel">連絡電話
+										<span class="text-danger">*</span></label>
+										<input type="text" class="form-control" id="tel" required placeholder="Phone">
+									</div>
+									<div class="form-group col-md-6">
+										<label for="Email">電子信箱
+										<span class="text-danger">*</span></label>
+										<input type="email" class="form-control" id="Email" required placeholder="Email">
+									</div>
+									<div class="form-group col-md-12">
+										<label for="Address">連絡電話
+										<span class="text-danger">*</span></label>
+										<input type="text" class="form-control" id="Address" required placeholder="Address">
+									</div>
+								</div>
+							</form>
+						</div>
+						<!--訂單確認-->
+						<div class="col-12 col-md-6">
+							<h2>您的訂單</h2><br>
+							<div class="table-responsive-sm">
+								<table class="table">
+									<tbody>
+										<tr>
+											<th>商品</th>
+											<th>價格</th>
+										</tr>
+										<tr>
+											<td>I24保溫隨行杯600ml - 花之島嶼</td>
+											<td>NT$1620</td>
+										</tr>
+										<tr>
+											<td>義大利24Bottles 保溫隨行杯 600ml - 紅杉木紋</td>
+											<td>NT$1620</td>
+										</tr>
+										<tr>
+											<td><b>小計</b></td>
+											<td>NT$3240</td>
+										</tr>
+										<tr>
+											<td><b>運送方式</b></td>
+											<td>
+												宅配 <br>NT$60
+											</td>
+										</tr>
+										<tr>
+											<td><b>總計</b></td>
+											<td><b>NT$3300</b></td>
+										</tr>
+									</tbody>
+								</table>
+								<div align="right" class="submit">
+									<a href="">
+									<button type="button" class="btn btn-secondary">確定購買</button></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="center">
+				Visitors： <br>
+				Contact：cycubox@cycu.edu.tw <br>
+				Tel：+886-3-265-9999 <br>
+				Copyright © 2020 All Rights Reserved. Design By I24
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	</body>
+</html>

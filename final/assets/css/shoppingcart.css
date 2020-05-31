@@ -1,0 +1,38 @@
+section{
+	font-family: Microsoft JhengHei;
+	color: #464646;
+}
+table thead{
+	background: #565656;
+	color: white;
+}
+.shoppingcart{
+	margin-top: 5%;
+	font-weight: bold;
+}
+.product-remove{
+	width: 5%;
+}
+.product-thumbnail{
+	width: 15%;
+}
+.product-name{
+	width: 35%;
+}
+.product-name a{
+	color: #565656;
+}
+.product-price,.product-quantity,.product-subtotal{
+	width: 15%;
+}
+.product-quantity input{
+	width: 50%;
+}
+@media screen and (max-width:768px){
+	.product-thumbnail{
+		display: none;
+	}
+	.product-quantity input{
+		width: 100%;
+	}
+}
