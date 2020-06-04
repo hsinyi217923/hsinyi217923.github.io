@@ -1,0 +1,24 @@
+section{
+	font-family: Microsoft JhengHei;
+	color: #464646;
+}
+.record{
+	margin-top: 5%;
+	font-weight: bold;
+}
+.a1
+{
+	background: #565656;
+	padding: 3%;
+	color:white;
+	text-align:center; 
+}
+.a3
+{
+	border:none;
+	background-color:white;
+	font-family:Microsoft JhengHei;
+	color:black;
+	text-align:center; 
+	vertical-align: middle;
+}

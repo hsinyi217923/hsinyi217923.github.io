@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<title>Member</title>
+		<title>Sign in</title>
 		<style>
 			@import url("../assets/css/index.css");
-			@import url("../assets/css/member.css");
+			@import url("../assets/css/signin.css");
 		</style>
 	</head>
 	<body>
@@ -36,46 +36,27 @@
 					<a href="shoppingcart.html"><img src="../assets/image/cart.png" class="icon"></a>
 				</div>
 			</nav>
-			<section >
+			<section>
 				<div class="container">
-					<div align="center" class="member">
-						<table class="a1"  cellpadding="10" border='3'>
-							<tr><th class="a2" colspan="2"><b>Member</b></th></tr>
-							<tr class="a4">
-								<td><b>Name : </b></td>
-								<td><b>Phone : </b></td>
-							</tr>
-							<tr class="a4">
-								<td colspan="2"><b>Account : </b></td>
-							</tr>
-							<tr class="a4">
-								<td colspan="2"><b>Password : </b></td>
-							</tr>
-							<tr class="a4">
-								<td colspan="2"><b>E-mail : </b></td>
-							</tr>
-							<tr class="a4">
-								<td colspan="2"><b>Address : </b></td>
-							</tr>
-						</table>
-						<!-- Button trigger modal -->
-						<button type="button" class="btn btn-secondary button" data-toggle="modal" data-target="#exampleModalCenter">
-						Change your Profile
-						</button>
-						<!-- Modal -->
-						<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-							<div class="modal-dialog modal-dialog-centered" role="document">
-								<div class="modal-content">
-									<div class="modal-header">
-										<h5 class="modal-title" id="exampleModalCenterTitle">Change your Profile</h5>
-										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-										<span aria-hidden="true">&times;</span>
-										</button>
-									</div>
-									<div class="modal-body">
-										<form action="" method="post" accept-charset="utf-8" class="needs-validation1">
-										<div class="form-row" align="left">
-											
+					<div class="row justify-content-center">
+						<div class="col-sm-4">
+							<nav>
+								<div class="nav nav-tabs ml-auto mr-auto a3 t" id="nav-tab" role="tablist">
+									<a class="nav-item nav-link active" id="nav-log-tab" data-toggle="tab" href="#nav-log" role="tab" aria-controls="nav-log" aria-selected="false">Login</a>
+									<a class="nav-item nav-link" id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab" aria-controls="nav-register" aria-selected="true">Register</a>
+									
+								</div>
+							</nav>
+							<div class="tab-content ml-auto mr-auto" id="nav-tabContent">
+								<div class="tab-pane fade show " id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
+									<form action="" method="post" accept-charset="utf-8" class="needs-validation1 a1">
+										<div class="form-row">
+											<div class="form-group col-md-8 ">
+												<label for="Account">Account
+													<span class="text-danger">*</span>
+												</label>
+												<input type="text"  class="form-control" id="Account" required placeholder="Account">
+											</div>
 											<div class="form-group col-md-8">
 												<label for="Password">Password
 													<span class="text-danger">*</span>
@@ -84,6 +65,7 @@
 											</div>
 											<div class="form-group col-md-8 ">
 												<label for="Name">Name
+													<span class="text-danger">*</span>
 												</label>
 												<input type="text"  class="form-control" id="Name" required placeholder="Name">
 											</div>
@@ -100,12 +82,30 @@
 												<input type="text"  class="form-control" id="Phone" required placeholder="Phone">
 											</div>
 										</div>
-									
-									</div>
-									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-										<button type="button" class="btn btn-primary">Save changes</button>
-									</div>
+										<div align="center">
+											<a href=""><button type="submit" class="btn btn-dark a2">Send</button></a>
+										</div>
+									</form>
+								</div>
+								<div class="tab-pane fade show active" id="nav-log" role="tabpanel" aria-labelledby="nav-log-tab">
+									<form action="" method="post" accept-charset="utf-8" class="needs-validation1 a1">
+										<div class="form-row">
+											<div class="form-group col-md-12 ">
+												<label for="Name">Account
+													<span class="text-danger">*</span>
+												</label>
+												<input type="text"  class="form-control" id="Name" required placeholder="Name">
+											</div>
+											<div class="form-group col-md-12">
+												<label for="Password">Password
+													<span class="text-danger">*</span>
+												</label>
+												<input type="Password" class="form-control" id="Password" required placeholder="Password">
+											</div>
+										</div>
+										<div align="center">
+											<a href=""><button type="submit" class="btn btn-dark a2">Send</button></a>
+										</div>
 									</form>
 								</div>
 							</div>
@@ -121,9 +121,8 @@
 					Copyright © 2020 All Rights Reserved. Design By I24
 				</div>
 			</footer>
-		</div>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-	</body>
-</html>
+			<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+		</body>
+	</html>

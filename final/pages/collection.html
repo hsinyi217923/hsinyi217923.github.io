@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-		<title>Shopping Cart</title>
+		<title>Collection</title>
 		<style>
 			@import url("../assets/css/index.css");
-			@import url("../assets/css/shoppingcart.css");
+			@import url("../assets/css/collection.css");
 		</style>
 	</head>
 	<body>
@@ -27,7 +27,7 @@
 						</a>
 						<div class="dropdown-menu">
 							<a class="dropdown-item" href="member.html">Member</a>
-							<a class="dropdown-item" href="collection.html">Collections</a>
+							<a class="dropdown-item" href="collecction.html">Collections</a>
 							<a class="dropdown-item" href="records.html">Records</a>
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="Signin.html">Sign in/Register</a>
@@ -41,23 +41,21 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12 mb-3">
-							<h2 class="mb-3 shoppingcart">Shopping Cart</h2>
+							<h2 class="mb-3 shoppingcart">Collection</h2>
 							<div class="table-responsive-sm">
 								<table class="table table-bordered table-middle">
 									<thead>
 										<tr>
-											<th scope="col" class="product-remove">&nbsp;</th>
+											<th scope="col" class="product-remove">是否取消</th>
 											<th scope="col" class="product-thumbnail">圖片</th>
 											<th scope="col" class="product-name">名稱</th>
-											<th scope="col" class="product-price">價格</th>
-											<th scope="col" class="product-quantity">數量</th>
-											<th scope="col" class="product-subtotal">總計</th>
+											<th scope="col" class="product-subtotal">價格</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
-											<td class="product-remove">
-												<a href="" data-toggle="tooltip" class="remove btn" data-placement="top" title="是否要移除?">X</a>
+											<td class="product-text">
+												<a href="">取消收藏</a>
 											</td>
 											<td class="product-thumbnail">
 												<a href=""><img src="../assets/image/products/p1.png" width="100%" alt="" class="img-fuild"></a>
@@ -65,15 +63,11 @@
 											<td class="product-name">
 												<a href="">I24保溫隨行杯600ml - 花之島嶼</a>
 											</td>
-											<td class="product-price">NT$1620</td>
-											<td class="product-quantity">
-												<input type="number" value="1" name="">
-											</td>
 											<td class="product-subtotal">NT$1620</td>
 										</tr>
 										<tr>
-											<td class="product-remove">
-												<a href="" data-toggle="tooltip" class="remove text-red btn" data-placement="top" title="是否要移除?">X</a>
+											<td class="product-text">
+												<a href="">取消收藏</a>
 											</td>
 											<td class="product-thumbnail">
 												<a href=""><img src="../assets/image/products/p2.png" width="100%" alt="" class="img-fuild"></a>
@@ -81,21 +75,12 @@
 											<td class="product-name">
 												<a href="">義大利24Bottles 保溫隨行杯 600ml - 紅杉木紋</a>
 											</td>
-											<td class="product-price">NT$1620</td>
-											<td class="product-quantity">
-												<input type="number" value="1" name="">
-											</td>
 											<td class="product-subtotal">NT$1620</td>
 										</tr>
 									</tbody>
 								</table>
-								<div class="row justify-content-around">
-									<div class="col-sm-6">
-										<a href="Collection.html"><button type="button" class="btn btn-secondary">返回我的收藏</button></a>
-									</div>
-									<div class="col-sm-6" align="right">
-										<a href="checkout.html"><button type="button" class="btn btn-secondary">前往結帳</button></a>
-									</div>
+								<div align="right">
+									<a href="shoppingcart.html"><button type="button" class="btn btn-secondary">前往購物車</button></a>
 								</div>
 							</div>
 						</div>
