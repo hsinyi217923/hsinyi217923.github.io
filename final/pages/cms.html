@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<title>Content Management System</title>
+		<style>
+			@import url("../assets/css/index.css");
+			@import url("../assets/css/cms.css");
+		</style>
+	</head>
+	<body>
+		<div class="container-fuild">
+			<nav class="navbar justify-content-around ">
+				<ul class="nav col-sm-4">
+					<li class="nav-item"><a href="Home.html" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="../index.html" class="nav-link">Story</a></li>
+					<li class="nav-item"><a href="Products.html" class="nav-link">Products</a></li>
+					<li class="nav-item"><a href="About.html" class="nav-link">About us</a></li>
+				</ul>
+				<div class="col-sm-4 center">
+					<a href="Home.html"><img src="../assets/image/logo.png" class="logo" ></a>
+				</div>
+				<div class="col-sm-4 right">
+					<div class="btn-group dropleft">
+						<a href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<img src="../assets/image/member.png" class="icon ">
+						</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="member.html">Member</a>
+							<a class="dropdown-item" href="collection.html">Collections</a>
+							<a class="dropdown-item" href="records.html">Records</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="Signin.html">Sign in/Register</a>
+						</div>
+					</div>
+					<a href="shoppingcart.html"><img src="../assets/image/cart.png" class="icon"></a>
+					<a href="cms.html"><img src="../assets/image/settings.png" class="icon1"></a>
+				</div>
+			</nav>
+			<section>
+				<div class="container">
+					<div class="row cms justify-content-around">
+						<div class="accordion col-sm-12" id="accordionExample">
+							<div class="card">
+								<div class="card-header c1" id="headingOne">
+									<h2 class="mb-0 ">
+									<button class="btn btn-link c1" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Manager Management
+									</button>
+									</h2>
+								</div>
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+									<div class="card-body">
+										<table class="table table-bordered table-middle" align="center">
+											<tr>
+												<th scope="col" class="a1">刪除</th>
+												<th scope="col" class="a1">修改</th>
+												<th scope="col" class="a1">管理員編號</th>
+												<th scope="col" class="a1">管理員帳號</th>
+												<th scope="col" class="a1">管理員密碼</th>
+												<th scope="col" class="a1">管理員姓名</th>
+												<th scope="col" class="a1">管理員電話</th>
+												<th scope="col" class="a1">管理員郵箱</th>
+											</tr>
+											<tr >
+												<td class="product-remove">
+													<a href="" data-toggle="tooltip" class="remove btn" data-placement="top" title="是否要移除?">X</a>
+												</td>
+												<td class="align-middle">
+													<a href="" data-toggle="modal" data-target="#exampleModalCenterfix" ><img src="../assets/image/pen.png" class="pen" alt=""></a>
+												</td>
+												<td class="align-middle"><b>1</b></td>
+												<td class="align-middle">預設</td>
+												<td class="align-middle">預設</td>
+												<td class="align-middle">預設</td>
+												<td class="align-middle">預設</td>
+												<td class="align-middle">預設</td>
+											</tr>
+										</table>
+										<div align="center">
+											<button type="button" data-toggle="modal" data-target="#exampleModalCenter" class="btn btn-secondary plus">+</button>
+										</div>
+										<!-- Modal -->
+										<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title" id="exampleModalCenterTitle">New Manager</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<form action="" method="post" accept-charset="utf-8" class="needs-validation1">
+															<div class="form-row" align="left">
+																<div class="form-group col-md-8">
+																	<label for="Account">Account
+																		<span class="text-danger">*</span>
+																	</label>
+																	<input type="text" class="form-control" id="Account" required placeholder="Account">
+																</div>
+																<div class="form-group col-md-8">
+																	<label for="Password">Password
+																		<span class="text-danger">*</span>
+																	</label>
+																	<input type="Password" class="form-control" id="Password" required placeholder="Password">
+																</div>
+																<div class="form-group col-md-8 ">
+																	<label for="Name">Name
+																	</label>
+																	<input type="text"  class="form-control" id="Name" required placeholder="Name">
+																</div>
+																<div class="form-group col-md-8 ">
+																	<label for="Phone">Phone</label>
+																	<input type="text"  class="form-control" id="Phone" required placeholder="Phone">
+																</div>
+																<div class="form-group col-md-10 ">
+																	<label for="Email">Email</label>
+																	<input type="Email"  class="form-control" id="Email" required placeholder="Email">
+																</div>
+															</div>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+															<button type="button" class="btn btn-primary">Save changes</button>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+										<!-- Modalfix -->
+										<div class="modal fade" id="exampleModalCenterfix" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title" id="exampleModalCenterTitle">Change your Profile</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<form action="" method="post" accept-charset="utf-8" class="needs-validation1">
+															<div class="form-row" align="left">
+																<div class="form-group col-md-8">
+																	<label for="Account">Account
+																		<span class="text-danger">*</span>
+																	</label>
+																	<input type="text" class="form-control" id="Account" required placeholder="Account">
+																</div>
+																<div class="form-group col-md-8">
+																	<label for="Password">Password
+																		<span class="text-danger">*</span>
+																	</label>
+																	<input type="Password" class="form-control" id="Password" required placeholder="Password">
+																</div>
+																<div class="form-group col-md-8 ">
+																	<label for="Name">Name
+																	</label>
+																	<input type="text"  class="form-control" id="Name" required placeholder="Name">
+																</div>
+																<div class="form-group col-md-8 ">
+																	<label for="Phone">Phone</label>
+																	<input type="text"  class="form-control" id="Phone" required placeholder="Phone">
+																</div>
+																<div class="form-group col-md-10 ">
+																	<label for="Email">Email</label>
+																	<input type="Email"  class="form-control" id="Email" required placeholder="Email">
+																</div>
+															</div>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+															<button type="button" class="btn btn-primary">Save changes</button>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="card">
+								<div class="card-header c1" id="headingThree">
+									<h2 class="mb-0">
+									<button class="btn btn-link collapsed c1" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									Products Management
+									</button>
+									</h2>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+									<div class="card-body">
+										<table class="table table-bordered table-middle" align="center">
+											<tr>
+												<th scope="col" class="a1">刪除</th>
+												<th scope="col" class="a1">修改</th>
+												<th scope="col" class="a1">商品編號</th>
+												<th scope="col" class="a1">商品照片</th>
+												<th scope="col" class="a1">商品類別</th>
+												<th scope="col" class="a1">商品名稱</th>
+												<th scope="col" class="a1">商品價格</th>
+												<th scope="col" class="a1">商品介紹</th>
+												<th scope="col" class="a1">商品庫存</th>
+											</tr>
+											<tr >
+												<td class="product-remove">
+													<a href="" data-toggle="tooltip" class="remove btn" data-placement="top" title="是否要移除?">X</a>
+												</td>
+												<td class="align-middle">
+													<a href=""  data-toggle="modal" data-target="#exampleModalCenter1fix"><img src="../assets/image/pen.png" class="pen" alt=""></a>
+												</td>
+												<td class="align-middle"><b>1</b></td>
+												<td class="align-middle">預設</td>
+												<td class="align-middle">預設</td>
+												<td class="align-middle">預設</td>
+												<td class="align-middle">預設</td>
+												<td class="align-middle">預設</td>
+												<td class="align-middle">預設</td>
+											</tr>
+										</table>
+										<div align="center">
+											<button type="button" data-toggle="modal" data-target="#exampleModalCenter1" class="btn btn-secondary plus">+</button>
+										</div>
+										<!-- Modal1 -->
+										<div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title" id="exampleModalCenterTitle">New Products</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<form action="" method="post" accept-charset="utf-8" class="needs-validation1">
+															<div class="form-row" align="left">
+																<div class="form-group col-md-8">
+																	<label for="Photo">Photo
+																		<span class="text-danger">*</span>
+																	</label>
+																	<input type="text" class="form-control" id="Photo" required placeholder="Photo">
+																</div>
+																<div class="form-group col-md-8">
+																	<label for="category">category
+																		<span class="text-danger">*</span>
+																	</label>
+																	<input type="text" class="form-control" id="category" required placeholder="category">
+																</div>
+																<div class="form-group col-md-8 ">
+																	<label for="Name">Name
+																		<span class="text-danger">*</span>
+																	</label>
+																	<input type="text"  class="form-control" id="Name" required placeholder="Name">
+																</div>
+																<div class="form-group col-md-5 ">
+																	<label for="Price">Price
+																		<span class="text-danger">*</span>
+																	</label>
+																	<input type="number"  class="form-control" id="Price" required placeholder="Price">
+																</div>
+																<div class="form-group col-md-5 ">
+																	<label for="Stock">Stock
+																		<span class="text-danger">*</span>
+																	</label>
+																	<input type="number"  class="form-control" id="Stock" required placeholder="Stock">
+																</div>
+																<div class="form-group col-md-12 ">
+																	<label for="information">Information</label>
+																	<textarea type="text"  class="form-control" id="information" required placeholder="Information"></textarea>
+																</div>
+															</div>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+															<button type="button" class="btn btn-primary">Save changes</button>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+										<!-- Modal1fix -->
+										<div class="modal fade" id="exampleModalCenter1fix" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+											<div class="modal-dialog modal-dialog-centered" role="document">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h5 class="modal-title" id="exampleModalCenterTitle">Change Product Information</h5>
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+														<span aria-hidden="true">&times;</span>
+														</button>
+													</div>
+													<div class="modal-body">
+														<form action="" method="post" accept-charset="utf-8" class="needs-validation1">
+															<div class="form-row" align="left">
+																<div class="form-group col-md-8">
+																	<label for="Photo">Photo
+																		<span class="text-danger">*</span>
+																	</label>
+																	<input type="text" class="form-control" id="Photo" required placeholder="Photo">
+																</div>
+																<div class="form-group col-md-8">
+																	<label for="category">category
+																		<span class="text-danger">*</span>
+																	</label>
+																	<input type="text" class="form-control" id="category" required placeholder="category">
+																</div>
+																<div class="form-group col-md-8 ">
+																	<label for="Name">Name
+																		<span class="text-danger">*</span>
+																	</label>
+																	<input type="text"  class="form-control" id="Name" required placeholder="Name">
+																</div>
+																<div class="form-group col-md-5 ">
+																	<label for="Price">Price
+																		<span class="text-danger">*</span>
+																	</label>
+																	<input type="number"  class="form-control" id="Price" required placeholder="Price">
+																</div>
+																<div class="form-group col-md-5 ">
+																	<label for="Stock">Stock
+																		<span class="text-danger">*</span>
+																	</label>
+																	<input type="number"  class="form-control" id="Stock" required placeholder="Stock">
+																</div>
+																<div class="form-group col-md-12 ">
+																	<label for="information">Information</label>
+																	<textarea type="text"  class="form-control" id="information" required placeholder="Information"></textarea>
+																</div>
+															</div>
+														</div>
+														<div class="modal-footer">
+															<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+															<button type="button" class="btn btn-primary">Save changes</button>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="card">
+								<div class="card-header c1" id="headingFour">
+									<h2 class="mb-0">
+									<button class="btn btn-link collapsed c1" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									Orders Management
+									</button>
+									</h2>
+								</div>
+								<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+									<div class="card-body">
+										<table class="table table-bordered table-middle" align="center">
+											<tr>
+												<th scope="col" class="a1">訂單編號</th>
+												<th scope="col" class="a1">會員帳號</th>
+												<th scope="col" class="a1">商品編號</th>
+												<th scope="col" class="a1">購買數量</th>
+												<th scope="col" class="a1">訂單日期</th>
+											</tr>
+											<tr >
+												<td class="align-middle"><b>1</b></td>
+												<td class="align-middle">預設</td>
+												<td class="align-middle">預設</td>
+												<td class="align-middle">預設</td>
+												<td class="align-middle">預設</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="center">
+				Visitors： <br>
+				Contact：cycubox@cycu.edu.tw <br>
+				Tel：+886-3-265-9999 <br>
+				Copyright © 2020 All Rights Reserved. Design By I24
+			</div>
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+.cms{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+table{
+	font-family:Microsoft JhengHei;
+	text-align: center;
+}
+.c1{
+	font-size: 20px;
+	background: #565656;
+	color: white;
+}
+.c1:hover{
+	color: white;
+}
+.a1
+{
+	background: #565656;
+	padding: 3%;
+	color:white;
+	text-align:center; 
+}
+.pen{
+	width: 20px;
+}
+.plus{
+	background: #565656;
+	font-size: 25px;
+	padding: 0% 3%;
+}
