@@ -23,13 +23,9 @@ nav .logo{
 }
 nav .icon{
 	width: 30px;
-	margin:1% 2%;
+	margin:3% 2%;
 }
-nav .icon1{
-	width: 30px;
-	margin:1% 1%;
-}
-section{
+body{
 	background: #FEFAEE;
 }
 header{
